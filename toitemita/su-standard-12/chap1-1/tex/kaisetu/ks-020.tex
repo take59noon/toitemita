@@ -1,0 +1,54 @@
+　かぜ薬を携帯した人全体の集合を $A$，
+胃薬を携帯した人全体の集合を $B$ とおく。<br>
+　また，全体集合を $U$ とおく。$\\[1em]$<br>
+
+⑴<br>
+　かぜ薬と胃薬を両方とも携帯した人全体の集合は，$n(A \cap B)$ $\\[1em]$<br>
+　$n(A \cap B)$ が最大値をとるのは，
+$n(A) < n(B)$ より $A \subset B$ のときである。<br>
+　このとき
+$$
+n(A \cap B) = n(A) = 75
+$$
+
+　$n(A \cap B)$ が最小値をとるのは，
+$n(A)+n(B)>n(U)$ より $A \cup B = U$ のときである。<br>
+　このとき，$n(A \cup B) = n(A) + n(B) - n(A \cap B)$ より
+\begin{eqnarray*}
+  n(A \cap B) &=& n(A) + n(B) - n(A \cup B) \\[0.6em]
+              &=& n(A) + n(B) - n(U) \\[0.6em]
+              &=& 75 + 80 - 100 = 55
+\end{eqnarray*}
+
+⑵<br>
+　かぜ薬と胃薬を両方とも携帯していない人全体の集合は，
+$n\rpln{\myoverline{A} \cap \myoverline{B}}$ <br>
+　ド・モルガンの法則より
+$$
+\myoverline{A} \cap \myoverline{B} = \myoverline{A \cup B}
+$$
+であるから
+\begin{eqnarray*}
+  n\rpln{\myoverline{A} \cap \myoverline{B}} 
+    &=& n\rpln{\myoverline{A \cup B}} \\[0.6em]
+    &=& n(U) - n(A \cup B)
+\end{eqnarray*}
+
+したがって，<br>
+　$n\rpln{\myoverline{A} \cap \myoverline{B}}$ が最大となるのは，
+$n(A \cup B)$ が最小，すなわち$A \cup B = B$ のときであるから
+\begin{eqnarray*}
+  n\rpln{\myoverline{A} \cap \myoverline{B}} 
+    &=& n(U) - n(A \cup B) \\[0.6em]
+    &=& n(U) - n(B) \\[0.6em]
+    &=& 100 - 80 = 20
+\end{eqnarray*}
+
+　$n\rpln{\myoverline{A} \cap \myoverline{B}}$ が最小となるのは，
+$n(A \cup B)$ が最大，すなわち$A \cup B = U$ のときであるから
+\begin{eqnarray*}
+  n\rpln{\myoverline{A} \cap \myoverline{B}} 
+    &=& n(U) - n(A \cup B) \\[0.6em]
+    &=& n(U) - n(U) \\[0.6em]
+    &=& 0
+\end{eqnarray*}

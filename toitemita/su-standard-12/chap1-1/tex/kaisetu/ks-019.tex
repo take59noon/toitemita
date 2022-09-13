@@ -1,0 +1,47 @@
+　$100$ から $200$ までの整数のうち，$3$ で割り切れる数全体の集合を $A$，
+$7$ で割り切れる数全体の集合を $B$ とおくと
+\begin{eqnarray*}
+  && A = \{3 \times 34,\; 3 \times 35,\; \cdots ,\; 3 \times 66\} \\[0.6em]
+  && B = \{3 \times 15,\; 3 \times 16,\; \cdots ,\; 3 \times 28\} \\[0.6em]
+\end{eqnarray*}
+であるから
+\begin{eqnarray*}
+  && n(A) = 66 - 34 + 1 = 33 \\[0.6em]
+  && n(B) = 28 - 15 + 1 = 14 \\[0.6em]
+\end{eqnarray*}
+　また，全体集合を $U$ とおくと
+$$
+n(U) = 200 - 100 + 1 = 101
+$$
+
+⑴<br>
+　$3$ でも $7$ でも割り切れない数全体の集合は，$\myoverline{A} \cap \myoverline{B}$<br>
+　ド・モルガンの法則より
+\begin{eqnarray*}
+  \myoverline{A} \cap \myoverline{B} 
+  &=& \myoverline{A \cup B} \\[0.6em]
+  &=& n(U) - n(A \cup B) \\[0.6em]
+  &=& n(U) - \rpln[\big]{n(A) + n(B) - n(A \cap B)}　\cdots\cdots\text{①}
+\end{eqnarray*}
+　ここで，集合 $A \cap B$ について考える。<br>
+　集合 $A \cap B$ は，$3$ でも $7$ でも割り切れる数，
+すなわち $21$ で割り切れる数全体の集合であるから
+$$
+A \cap B = \{21 \times 5,\; 21 \times 6,\; \cdots ,\; 21 \times 9\}
+$$
+　したがって
+$$
+n(A \cap B) = 9 - 5 + 1 = 5
+$$
+　よって，①に $n(U)$，$n(A)$，$n(B)$，$n(A \cap B)$ をそれぞれ代入して
+$$
+n\rpln{\myoverline{A} \cap \myoverline{B}} = 101 - (33+14-5) = 59
+$$
+
+⑵<br>
+　$3$ で割り切れるが $7$ で割り切れない数全体の集合は，$A \cap \myoverline{B}$ <br>
+　よって
+\begin{eqnarray*}
+  n\rpln{A \cap \myoverline{B}} &=& n(A) - n(A \cap B) \\[0.6em]
+                                &=& 33 - 5 = 28 
+\end{eqnarray*}

@@ -1,0 +1,44 @@
+　数学の合格者全体の集合を $A$，
+英語の合格者全体の集合を $B$ とおくと
+\begin{eqnarray*}
+  && n(A) = 30 \\[0.6em]
+  && n(B) = 50 \\[0.6em]
+  && n\rpln{\myoverline{A} \cap \myoverline{B}} = 8
+\end{eqnarray*}
+　また，全体集合を $U$ とおくと，$n(U)=60$ $\\[1em]$<br>
+
+⑴<br>
+　$2$ 科目とも合格した人全体の集合は，$A \cap B$ <br>
+　ここで
+$$
+n(A \cup B) = n(A) + n(B) - n(A \cap B)
+$$
+を変形すると
+$$
+n(A \cap B) = n(A) + n(B) - n(A \cup B)
+$$
+であるから，$n(A \cup B)$ がわかれば $n(A \cap B)$ が得られる。<br>
+<br>
+　ド・モルガンの法則より
+$$
+\myoverline{A} \cap \myoverline{B} = \myoverline{A \cup B}
+$$
+であるから
+\begin{eqnarray*}
+  n(A \cup B) &=& n(U) - n\rpln{\myoverline{A \cup B}} \\[0.6em]
+              &=& n(U) - n\rpln{\myoverline{A} \cap \myoverline{B}} \\[0.6em]
+              &=& 60 - 8 = 52
+\end{eqnarray*}
+　よって，求める人数は
+\begin{eqnarray*}
+  n(A \cap B) &=& n(A) + n(B) - n(A \cup B) \\[0.6em]
+              &=& 30 + 50 - 52 = 28
+\end{eqnarray*}
+
+⑵<br>
+　数学だけ合格した人全体の集合は，$A \cap \myoverline{B}$ <br>
+　よって，求める人数は
+\begin{eqnarray*}
+  n\rpln{A \cap \myoverline{B}} &=& n(A) - n(A \cap B) \\[0.6em]
+                              &=& 30 - 28 = 2
+\end{eqnarray*}

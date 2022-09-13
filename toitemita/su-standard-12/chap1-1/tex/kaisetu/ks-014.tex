@@ -1,0 +1,44 @@
+　全体集合を $U$ とおくと，$n(U)=100$ $\\[1em]$<br>
+
+⑴<br>
+　$4$ で割り切れる数全体の集合を $A$ とおくと
+$$
+A = \{4 \times 1,\; 4 \times 2,\; \cdots ,\; 4 \times 25\}
+$$
+　よって，$n(A) = 25$ $\\[1em]$<br>
+
+⑵<br>
+　$6$ で割り切れる数全体の集合を $B$ とおくと
+$$
+B = \{6 \times 1,\; 6 \times 2,\; \cdots ,\; 6 \times 16\}
+$$
+　したがって，$n(B) = 16$ より
+\begin{eqnarray*}
+  n\rpln{\myoverline{B}} &=& n(U) - n(B) \\[0.6em]
+                       &=& 100 - 16 = 84 
+\end{eqnarray*}
+
+⑶<br>
+　$4$ でも $6$ でも割り切れる数，すなわち $12$ で割り切れる数全体の集合は
+$$
+A \cap B = \{12 \times 1,\; 12 \times 2,\; \cdots ,\; 12 \times 8\}
+$$
+であるから， $n(A \cap B) = 8$<br>
+　$4$ と $6$ の少なくとも一方で割り切れる数全体の集合は，$A \cup B$<br>
+　よって，求める数の個数は
+\begin{eqnarray*}
+  n(A \cup B) &=& n(A) + n(B) - n(A \cap B) \\[0.6em]
+                   &=& 25 + 16 - 8 = 33
+\end{eqnarray*}
+  
+⑷<br>
+　$4$ でも $6$ でも割り切れない数全体の集合は，$\myoverline{A} \cap \myoverline{B}$<br>
+　ド・モルガンの法則より
+$$
+\myoverline{A} \cap \myoverline{B} = \myoverline{A \cup B}
+$$
+　よって，求める数の個数は
+\begin{eqnarray*}
+  n\rpln{\myoverline{A \cup B}} &=& n(U) - n(A \cup B) \\[0.6em]
+                              &=& 100 - 33 = 67
+\end{eqnarray*}

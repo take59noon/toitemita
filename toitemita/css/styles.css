@@ -1,0 +1,23 @@
+.mathjax-content {
+  font-family: arial, sans-serif;
+  width: 40em;
+  margin: 1em 0;
+  line-height: 1.6em;
+}
+
+.mathjax-content-k {
+  font-family: arial, sans-serif;
+  width: 40em;
+  padding: 0em 1em 0.6em;
+  line-height: 1.6em;
+}
+
+.mathjax-content-header {
+  width: 45em;
+}
+
+/* .container-toitemita-mkk {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;  
+} */

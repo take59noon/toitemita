@@ -1,0 +1,57 @@
+　全体集合を $U$ とおくと，$n(U)=1000$ $\\[1em]$<br>
+
+⑴<br>
+　$3$ の倍数全体の集合を $A$ とおくと
+$$
+A = \{3 \times 1,\; 3 \times 2,\; \cdots ,\; 3 \times 333\}
+$$
+　よって，$n(A) = 333$ $\\[1em]$<br>
+
+⑵<br>
+　$5$ の倍数全体の集合を $B$ とおくと
+$$
+B = \{5 \times 1,\; 5 \times 2,\; \cdots ,\; 5 \times 200\}
+$$
+　よって，$n(B) = 200$ $\\[1em]$<br>
+
+⑶<br>
+　$3$ の倍数かつ $5$ の倍数，すなわち $15$ の倍数全体の集合は
+$$
+A \cap B = \{15 \times 1,\; 15 \times 2,\; \cdots ,\; 15 \times 66\}
+$$
+　よって， $n(A \cap B) = 66$ $\\[1em]$<br>
+  
+⑷<br>
+　$3$ の倍数または $5$ の倍数全体の集合は，$A \cup B$ <br>
+　よって，求める数の個数は
+\begin{eqnarray*}
+  n(A \cup B) &=& n(A) + n(B) - n(A \cap B) \\[0.6em]
+                   &=& 333 + 200 - 66 = 467
+\end{eqnarray*}
+
+⑸<br>
+　求める数の個数は
+\begin{eqnarray*}
+  n(\myoverline{A}) &=& n(U) - n(A) \\[0.6em]
+                  &=& 1000 - 333 = 667
+\end{eqnarray*}
+
+⑹<br>
+　$3$ の倍数でなく$5$ の倍数でもない数全体の集合は，$\myoverline{A} \cap \myoverline{B}$<br>
+　ド・モルガンの法則より
+$$
+\myoverline{A} \cap \myoverline{B} = \myoverline{A \cup B}
+$$
+　よって，求める数の個数は
+\begin{eqnarray*}
+  n\rpln{\myoverline{A \cup B}} &=& n(U) - n(A \cup B) \\[0.6em]
+                              &=& 1000 - 467 = 533
+\end{eqnarray*}
+
+⑺<br>
+　$3$ の倍数であるが $5$ の倍数でない数全体の集合は，$A \cap \myoverline{B}$ <br>
+　よって，求める数の個数は
+\begin{eqnarray*}
+  n\rpln{A \cap \myoverline{B}} &=& n(A) - n(A \cap B) \\[0.6em]
+                               &=& 333 - 66 = 267
+\end{eqnarray*}
